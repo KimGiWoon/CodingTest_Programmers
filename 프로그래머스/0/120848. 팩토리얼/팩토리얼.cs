@@ -1,9 +1,10 @@
 using System;
 
-public class Solution {
-    int answer;
-    int count = 1;
+public class Solution {    
     public int solution(int n) {
+        
+        int answer = 0;
+        int count = 1;  
         
         for(int i = 1; i <= 10; i++)
         {

@@ -1,14 +1,11 @@
 using System;
+using System.Linq;
 
 public class Solution {
     public int solution(int n) {
         int answer = 0;
-        
-        foreach(char sumNumber in n.ToString())
-        {
-            answer += int.Parse(sumNumber.ToString());
-        }
-        
+        answer = n.ToString().Sum(x => int.Parse(x.ToString()));
+           
         return answer;
     }
 }
